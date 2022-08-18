@@ -64,7 +64,7 @@ p {
 }
 
 .container-fluid-form1 {
-    padding: 5% 5%;
+    padding: 5% 10%;
 }
 
 .container-fluid-form2 {
@@ -153,6 +153,7 @@ p {
 }
 
 /* Form */
+
 .form_heading {
     margin-bottom: 25px;
 }
@@ -193,6 +194,119 @@ p {
     margin: 20px;
 }
 
+/* Shop */
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background: #f6f6f6;
+}
+
+.heading {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 250px;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: var(--lightbrown);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .contentBox {
+    position: relative;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card .contentBox h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: var(--lightbrown);
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+}
+
+.mouse {
+    height: 300px;
+    width: auto;
+}
+
 /* Footer */
 #footer {
     background-image: url("./img/only footer.png");
@@ -202,11 +316,94 @@ p {
     text-align: left;
 }
 
-.footer_icons{
+.footer_icons {
     margin-right: 15px;
 }
 
-.footer_icon{
+.footer_icon {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1600px){
+    .container-fluid-form1 > div > img{
+    object-fit: cover;
+    max-width: 80vh;
+    }
+}
+@media only screen and (max-width: 1500px){
+    .container-fluid-form1 > div > img{
+    object-fit: cover;
+    max-width: 70vh;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .container-fluid-form1 > div > img{
+    object-fit: cover;
+    max-width: 50vh;
+    }
+    .article-text{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .navbar{
+        padding: 0 0 0rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    font-family: "Bitter";
+    font-size: 2rem;
+    }
+    .container-fluid-form1 > div > img{
+    object-fit: cover;
+    max-width: 60vh;
+    margin-bottom: 20px;
+    }
+    .article-text{
+        font-size: 1.5rem;
+    }
+    .temp{
+        display: none;
+    }
+}
+@media only screen and (max-width: 576px){
+    .container-fluid-form1 > div > img{
+    object-fit: cover;
+    max-width: 40vh;
+    }
+    .footer-heading{
+        font-size: 1rem;
+    }
+    .footer_icons{
+        display: none;
+    }
+    .footer_sub_heading{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .container-fluid-form1 > div > img{
+    object-fit: cover;
+    max-width: 40vh;
+    }
+    .info_image > img{
+        max-width: 40vh;
+    }
+    .article-text{
+        font-size: 1rem;
+    }
+    .footer-heading{
+        display: none;
+    }
+    .footer_sub_heading{
+        font-size: 0.5rem;
+    }
 }

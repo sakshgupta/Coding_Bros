@@ -5,7 +5,6 @@ function title() {
     return (
         <div>
             <section className="colored-section" id="title">
-                {/* <img src='/img/only title_cleanup.png' alt="title_image" /> */}
 
                 <div className="container-fluid">
 
@@ -29,10 +28,10 @@ function title() {
                                     <a className="nav-link" href="#articles">Article</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#cta">Shop</a>
+                                    <a className="nav-link" href="#shop">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#cta">About Us</a>
+                                    <a className="nav-link" href="#about">About Us</a>
                                 </li>
                             </ul>
 

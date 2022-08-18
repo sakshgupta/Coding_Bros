@@ -1,21 +1,25 @@
-import React from 'react'
+import React from 'react';
+import Food from '../components/all_food.json';
 
 function shop() {
     return (
-        <div>
-            <div class="card">
-
-                <div class="imgBox">
-                    <img src="df2.png" alt="pedigree-vital" class="mouse" />
-                </div>
-
-                <div class="contentBox">
-                    <h3>Pedigree Vital</h3>
-                    <h2 class="price">61.<small>98</small> €</h2>
-                    <a href="#" class="buy">Buy Now</a>
-                </div>
-
-            </div>
+        <div className="shop row" id="shop">
+            {
+                Food.map((rec, key) => {
+                    return (
+                        <div className="card">
+                            <div className="imgBox">
+                                <img src={rec.source} alt="pedigree-vital" className="mouse" />
+                            </div>
+                            <div className="contentBox">
+                                <h3>{rec.name}</h3>
+                                <h2 className="price">{rec.main_price}.<small>{rec.small_price}</small> ₹</h2>
+                                <a href="#" className="buy">Add to Cart</a>
+                            </div>
+                        </div>
+                    );
+                })
+            }
         </div>
     )
 }

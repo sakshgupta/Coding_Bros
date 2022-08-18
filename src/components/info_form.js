@@ -4,7 +4,7 @@ function info_form() {
     return (
         <div>
             <div className="container-fluid-form2 row">
-                <div className="col-6">
+                <div className="col-lg-6 col-md-12 col-sm-12">
                     {/* Info about Dog Form */}
                     <form className="shelter_request">
                         <h1 className="form_heading">Let's Know more about your Dog</h1>
@@ -27,7 +27,7 @@ function info_form() {
                         <button type="submit" className="btn btn-primary submit_btn">Submit</button>
                     </form>
                 </div>
-                <div className="info_image col-6">
+                <div className="info_image col-lg-6 col-md-12 col-sm-12">
                     <img src='/img/dogs/form2.jpg' alt="Dog" />
                 </div>
             </div>

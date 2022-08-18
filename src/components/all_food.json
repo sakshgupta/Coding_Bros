@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Pedigree Vital",
+        "source": "./img/food/df2.png",
+        "main_price": "61",
+        "small_price": "98"
+    },
+    {
+        "id": 2,
+        "name": "Himalaya Pet Food",
+        "source": "./img/food/df1.png",
+        "main_price": "71",
+        "small_price": "49"
+    },
+    {
+        "id": 3,
+        "name": "Drools",
+        "source": "./img/food/df3.png",
+        "main_price": "54",
+        "small_price": "23"
+    },
+    {
+        "id": 4,
+        "name": "Arden Grange",
+        "source": "./img/food/df4.png",
+        "main_price": "84",
+        "small_price": "16"
+    }
+]

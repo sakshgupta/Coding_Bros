@@ -14,7 +14,7 @@ function footer() {
                     {/* Title */}
 
                     <div className="row">
-                        <div className="col-5">
+                        <div className="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <h1 className="footer-heading">For questions and suggestions</h1>
                             <div className="footer_sub_heading footer_icon" onClick={() => navigator.clipboard.writeText('pawshelterservice@gmail.com')}>
                                 <FontAwesomeIcon icon="fa-regular fa-envelope" className="footer_icons" />
@@ -25,14 +25,14 @@ function footer() {
                                 +919851743471
                             </div>
                         </div>
-                        <div className="col-5">
+                        <div className="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                             <h1 className="footer-heading">We are waiting for your visit</h1>
                             <div className="footer_sub_heading footer_icon" onClick={showInMapClicked}>
                                 <FontAwesomeIcon icon="fa-solid fa-location-arrow" className="footer_icons" />
                                 Rajouri Garden, New Delhi, 110027
                             </div>
                         </div>
-                        <div className="col-2">
+                        <div className="col-lg-2 temp">
                         </div>
                     </div>
 

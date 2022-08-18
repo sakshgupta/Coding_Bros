@@ -4,10 +4,10 @@ function shelther_form() {
     return (
         <div>
             <div className="container-fluid-form1 row">
-                <div className="col">
+                <div className="col-lg-6 col-md-12 col-sm-12">
                     <img src='/img/dogs/form1.jpg' alt="Dog" />
                 </div>
-                <div className="col">
+                <div className="col-lg-6 col-md-12 col-sm-12">
                     {/* Shelter Request Form */}
                     <form className="shelter_request">
                         <h1 className="form_heading">Shelter Service</h1>
