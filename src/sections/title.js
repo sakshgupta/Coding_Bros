@@ -33,6 +33,9 @@ function title() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#about">About Us</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/healthcare">HealthCare</a>
+                                </li>
                             </ul>
 
                         </div>

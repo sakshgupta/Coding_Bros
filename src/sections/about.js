@@ -1,10 +1,10 @@
 import React from "react";
 
-function aboutus() {
+function about() {
   return (
     <section id="aboutus">
       <div className="container-fluid-form2 row">
-        <div className="col-6 about-text">
+        <div className="col-lg-6  col-md-6 col-sm-12 about-text">
           <h1>About PAW </h1>
           <p>
             PAW provide shelter and healthcare to dogs that needs our help. We
@@ -17,7 +17,7 @@ function aboutus() {
             shelter to them via the website, targeting a large audience.
           </p>
         </div>
-        <div className="about_image col-6">
+        <div className="about_image col-lg-6  col-md-6 col-sm-12">
           <img src="/img/dogs/aboutus.png" width={250} alt="Dog"></img>
         </div>
       </div>
@@ -25,4 +25,4 @@ function aboutus() {
   );
 }
 
-export default aboutus;
+export default about;

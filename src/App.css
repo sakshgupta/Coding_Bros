@@ -148,6 +148,7 @@ p {
 
 /* About Us Section */
 .about-text{
+    top: 50px;
     text-align: left;
 }
 
@@ -377,6 +378,9 @@ p {
     }
     .temp{
         display: none;
+    }
+    .about_image{
+        margin-top: 50px;
     }
 }
 @media only screen and (max-width: 576px){
