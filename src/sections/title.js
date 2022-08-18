@@ -31,7 +31,7 @@ function title() {
                                     <a className="nav-link" href="#shop">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#about">About Us</a>
+                                    <a className="nav-link" href="#aboutus">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/healthcare">HealthCare</a>
