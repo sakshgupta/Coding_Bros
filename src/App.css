@@ -7,6 +7,7 @@
 body {
     font-family: "Roboto";
     text-align: center;
+    overflow-x: hidden;
 }
 
 h1,
@@ -31,6 +32,21 @@ p {
     line-height: 1.5;
 }
 
+.footer-heading{
+    font-family: "Bitter";
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 20px !important;
+}
+
+.footer_sub_heading{
+    color: var(--lightbrown);
+    font-family: "Bitter";
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px !important;
+}
+
 .section-heading {
     font-size: 3rem;
     line-height: 1.5;
@@ -40,6 +56,15 @@ p {
 
 .container-fluid {
     padding: 7% 15%;
+}
+
+.container-fluid-form1{
+    padding: 5% 5%;
+}
+
+.container-fluid-form2{
+    background-color: #f6f6f6;
+    padding: 5% 10%;
 }
 
 /* Sections */
@@ -116,4 +141,36 @@ p {
 .pricing-column>.card>img:nth-child(1) {
     width: 200px;
     height: 100px;
+}
+
+/* Form */
+.form_heading{
+    margin-bottom: 25px;
+}
+
+.shelter_request{
+    text-align: left;
+}
+
+.info_image > img{
+    object-fit: cover;
+}
+
+.submit_btn{
+    padding: 1.5% 1.5%;
+    background-color: var(--lightbrown) !important;
+    color: black !important;
+    font-family: 'Bitter';
+    font-size: 1rem;
+    border-radius: 15px;
+    border: none;
+}
+
+/* Footer */
+#footer {
+    background-image: url("./img/only footer.png");
+    background-repeat: no-repeat;
+    background-size: fit;
+    color: #fff;
+    text-align: left;
 }
