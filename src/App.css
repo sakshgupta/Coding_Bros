@@ -4,6 +4,10 @@
     --lightbrown: #f1cdb3;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto";
     text-align: center;
@@ -27,19 +31,20 @@ p {
 /* Headings */
 
 .big-heading {
+    margin-top: 100px;
     font-family: "Bitter";
     font-size: 3.5rem;
     line-height: 1.5;
 }
 
-.footer-heading{
+.footer-heading {
     font-family: "Bitter";
     font-size: 2rem;
     line-height: 1.5;
     margin-bottom: 20px !important;
 }
 
-.footer_sub_heading{
+.footer_sub_heading {
     color: var(--lightbrown);
     font-family: "Bitter";
     font-size: 1rem;
@@ -55,16 +60,24 @@ p {
 /* Containers */
 
 .container-fluid {
-    padding: 7% 15%;
+    padding: 3% 15% 10%;
 }
 
-.container-fluid-form1{
+.container-fluid-form1 {
     padding: 5% 5%;
 }
 
-.container-fluid-form2{
+.container-fluid-form2 {
     background-color: #f6f6f6;
     padding: 5% 10%;
+}
+
+.container-fluid-footer {
+    padding: 5% 10%;
+}
+
+.container-fluid-article {
+    padding: 3% 15% 3%;
 }
 
 /* Sections */
@@ -108,7 +121,7 @@ p {
     border-radius: 40px;
 }
 
-.download-button:hover{
+.download-button:hover {
     opacity: 0.7;
     transition: 0.4s;
 }
@@ -122,10 +135,6 @@ p {
     background-size: cover;
     color: #fff;
     text-align: left;
-}
-
-#title .container-fluid {
-    padding: 3% 15% 15%;
 }
 
 /* Title Image */
@@ -144,19 +153,19 @@ p {
 }
 
 /* Form */
-.form_heading{
+.form_heading {
     margin-bottom: 25px;
 }
 
-.shelter_request{
+.shelter_request {
     text-align: left;
 }
 
-.info_image > img{
+.info_image>img {
     object-fit: cover;
 }
 
-.submit_btn{
+.submit_btn {
     padding: 1.5% 1.5%;
     background-color: var(--lightbrown) !important;
     color: black !important;
@@ -166,11 +175,38 @@ p {
     border: none;
 }
 
+/* Article */
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.article-text {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.article-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
 /* Footer */
 #footer {
     background-image: url("./img/only footer.png");
     background-repeat: no-repeat;
-    background-size: fit;
+    background-size: fill;
     color: #fff;
     text-align: left;
+}
+
+.footer_icons{
+    margin-right: 15px;
+}
+
+.footer_icon{
+    text-decoration: underline;
+    cursor: pointer;
 }

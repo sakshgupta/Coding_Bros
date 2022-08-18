@@ -23,10 +23,10 @@ function title() {
 
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#footer">Home</a>
+                                    <a className="nav-link" href="#title">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#pricing">Article</a>
+                                    <a className="nav-link" href="#articles">Article</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#cta">Shop</a>
@@ -48,7 +48,9 @@ function title() {
                             <div>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor quam id leo dignissim, ut efficitur elit interdum. Proin fringilla nisl ac convallis mollis. Curabitur et justo efficitur, consectetur velit sit amet, pharetra orci. Nulla molestie velit vel leo ornare, ut tristique sapien scelerisque.
                             </div>
-                            <button type="button" className="btn btn-dark btn-lg download-button">Contact Us</button>
+                            <a href="#footer">
+                                <button type="button" className="btn btn-dark btn-lg download-button">Contact Us</button>
+                            </a>
                         </div>
 
                     </div>
