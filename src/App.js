@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from './sections/title'
+import AboutUs from './sections/aboutus'
 import Footer from './sections/footer'
 import Article from './sections/article'
 import Shop from './sections/shop'
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       <Title />
+      <AboutUs />
       <Form1 />
       <Form2 />
       <Article />

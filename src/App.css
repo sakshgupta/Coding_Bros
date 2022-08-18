@@ -146,6 +146,11 @@ p {
     right: 30%;
 }
 
+/* About Us Section */
+.about-text{
+    text-align: left;
+}
+
 /* Pricing */
 .pricing-column>.card>img:nth-child(1) {
     width: 200px;
