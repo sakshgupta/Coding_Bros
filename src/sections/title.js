@@ -13,7 +13,7 @@ function title() {
 
                     <nav className="navbar navbar-expand-lg navbar-dark">
 
-                        <a className="navbar-brand" href="">PAWggers</a>
+                        <a className="navbar-brand" href="">PAW - Shelter</a>
 
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                             <span className="navbar-toggler-icon"></span>
