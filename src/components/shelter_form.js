@@ -45,7 +45,7 @@ function shelther_form() {
                                 <option>Permanently</option>
                             </select>
                         </div>
-                        <button type="submit" className="btn btn-primary submit_btn">Submit</button>
+                        <button type="submit" className="btn btn-primary all_btn">Submit</button>
                     </form>
                 </div>
             </div>

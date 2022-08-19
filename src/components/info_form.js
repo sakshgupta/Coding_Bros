@@ -24,7 +24,7 @@ function info_form() {
                             <label for="dog_health">Health</label>
                             <textarea className="form-control" id="handler_reason" rows="2" placeholder="How's your dog?"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary submit_btn">Submit</button>
+                        <button type="submit" className="all_btn btn btn-primary submit_btn">Submit</button>
                     </form>
                 </div>
                 <div className="info_image col-lg-6 col-md-12 col-sm-12">

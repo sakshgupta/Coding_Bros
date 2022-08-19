@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Spa Bath",
+        "main_price": "700",
+        "features":[
+            "Bath With Shampoo &",
+            "Conditioner",
+            "Blow Dry",
+            "Nail Clipping",
+            "Ear Cleaning",
+            "Eyes Cleaning",
+            "Paw Massage",
+            "Combing/Brushing"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Bath + Basic Grooming",
+        "main_price": "1199",
+        "features":[
+            "Bath With Shampoo &",
+            "Conditioner",
+            "Blow Dry",
+            "Face Haircutting",
+            "Sanitary Trim",
+            "Nail Clipping",
+            "Ear Cleaning",
+            "Eyes Cleaning",
+            "Teeth Cleaning/Mouth Spray",
+            "Paw Massage",
+            "Combing/Brushing"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Full Service",
+        "main_price": "1499",
+        "features":[
+            "Bath With Shampoo &",
+            "Conditioner",
+            "Blow Dry",
+            "Full body Trimming/Zero",
+            "Haircut",
+            "Eyes Cleaning",
+            "Ear Cleaning",
+            "Body Massage",
+            "Sanitary Trim",
+            "Nail Clipping",
+            "Teeth Cleaning/Mouth Spray",
+            "Spray",
+            "Paw Massage",
+            "Combing/Brushing"
+        ]
+    }
+]

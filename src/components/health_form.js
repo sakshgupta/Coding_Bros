@@ -3,7 +3,7 @@ import React from 'react'
 function health_form() {
     return (
         <div>
-            <div className="container-fluid-form2 row">
+            <div className="container-fluid-form-health row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
                     {/* Info about Dog Form */}
                     <form className="shelter_request">
@@ -44,11 +44,11 @@ function health_form() {
                             <label for="dog_breed">Colour</label>
                             <input type="text" className="form-control" id="dog_breed" placeholder="Your dog's colour" />
                         </div>
-                        <button type="submit" className="btn btn-primary submit_btn">Submit</button>
+                        <button type="submit" className="btn btn-primary submit_btn all_btn">Submit</button>
                     </form>
                 </div>
-                <div className="info_image col-lg-6 col-md-12 col-sm-12">
-                    <img src='/img/dogs/hform.png' width={800} alt="Dog" />
+                <div className="info_image_health col-lg-6 col-md-12 col-sm-12">
+                    <img src='/img/dogs/sick_dog_2_crop.png' width={500} alt="Dog" />
                 </div>
             </div>
 

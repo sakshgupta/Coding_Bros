@@ -80,6 +80,17 @@ p {
     padding: 3% 15% 3%;
 }
 
+.container-fluid-form-health {
+    background-color: #f6f6f6;
+    padding: 5% 10%;
+    display: flex;
+}
+
+.container-fluid-pricing{
+    background-color: #f6f6f6;
+    padding: 2% 10% 0%;
+}
+
 /* Sections */
 
 .white-section {
@@ -109,7 +120,7 @@ p {
     font-weight: 400;
 }
 
-.navbar_logo{
+.navbar_logo {
     width: 90px;
     height: 90px;
     margin-right: 30px;
@@ -124,12 +135,39 @@ p {
     color: black !important;
     font-family: 'Bitter';
     font-size: 1rem;
-    border-radius: 40px;
 }
 
 .download-button:hover {
     opacity: 0.7;
     transition: 0.4s;
+}
+
+.all_btn {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: var(--lightbrown) !important;
+    color: black !important;
+    border: none;
+    font-family: 'Bitter';
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    letter-spacing: 1px;
+}
+
+.all_btn:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.back_btn{
+    margin-right: -1%;
+    float: left;
+    color: inherit;
+}
+
+.back_arrow{
+    size: 100px
 }
 
 /* Title Section */
@@ -153,7 +191,7 @@ p {
 }
 
 /* About Us Section */
-.about-text{
+.about-text {
     top: 50px;
     text-align: left;
 }
@@ -178,14 +216,8 @@ p {
     object-fit: cover;
 }
 
-.submit_btn {
-    padding: 1.5% 1.5%;
-    background-color: var(--lightbrown) !important;
-    color: black !important;
-    font-family: 'Bitter';
-    font-size: 1rem;
-    border-radius: 15px;
-    border: none;
+.info_image_health>img {
+    margin-top: 30%;
 }
 
 /* Article */
@@ -337,96 +369,297 @@ p {
     cursor: pointer;
 }
 
+/* Healthcare */
+.back_button {
+    margin-left: auto;
+}
+
+/* Healthcare Pricing Cards */
+.demo {
+    font-family: "Bitter";
+    padding: 50px 0 100px;
+    background-color: #f6f6f6;
+}
+
+.heading-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pricingTable {
+    border: 2px solid #e3e3e3;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    transform: translateZ(0px);
+}
+
+.pricingTable:before,
+.pricingTable:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+
+.pricingTable:before {
+    border-right: 2px solid var(--lightbrown);
+    border-left: 2px solid var(--lightbrown);
+    transform: scaleY(0);
+    transform-origin: 100% 0 0;
+}
+
+.pricingTable:after {
+    border-bottom: 2px solid var(--lightbrown);
+    border-top: 2px solid var(--lightbrown);
+    transform: scaleX(0);
+    transform-origin: 0 100% 0;
+}
+
+.pricingTable:hover:before {
+    transform: scaleY(1);
+}
+
+.pricingTable:hover:after {
+    transform: scaleX(1);
+}
+
+.pricingTable .pricingTable-header {
+    background: var(--lightbrown);
+    color: #fff;
+    margin: -2px -2px 35px;
+    padding: 40px 0;
+}
+
+.pricingTable .pricing_heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.pricingTable .subtitle {
+    font-size: 14px;
+    display: block;
+}
+
+.pricingTable .price-value {
+    font-size: 72px;
+    font-weight: 600;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.pricingTable .currency {
+    font-size: 45px;
+    font-weight: normal;
+    position: absolute;
+    top: 2px;
+    left: -30px;
+}
+
+.pricingTable .month {
+    font-size: 20px;
+    position: absolute;
+    bottom: 17px;
+    right: -40px;
+}
+
+.pricingTable .pricing-content {
+    list-style: none;
+    padding: 0;
+    /* margin-bottom: 30px; */
+}
+
+.pricingTable .pricing-content li {
+    font-size: 16px;
+    color: #7a7e82;
+    line-height: 20px;
+}
+
+.pricingTable .read {
+    display: inline-block;
+    border: 2px solid #7a7e82;
+    border-right: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7a7e82;
+    padding: 9px 30px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-family: "Bitter";
+    text-decoration: none;
+}
+
+.pricingTable .read:hover {
+    border-color: var(--lightbrown);
+    color: var(--lightbrown);
+}
+
+.pricingTable .read i {
+    font-size: 19px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .read:hover i {
+    right: 5px;
+}
+
+.pricingTable .read:before,
+.pricingTable .read:after {
+    content: "";
+    display: block;
+    height: 30px;
+    border-left: 2px solid #7a7e82;
+    position: absolute;
+    right: -11px;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .read:before {
+    bottom: -6px;
+    transform: rotate(45deg);
+}
+
+.pricingTable .read:after {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+.pricingTable .read:hover:before,
+.pricingTable .read:hover:after {
+    border-left-color: var(--lightbrown);
+}
+
 /* Media Queries */
-@media only screen and (max-width: 1600px){
-    .container-fluid-form1 > div > img{
-    object-fit: cover;
-    max-width: 80vh;
+@media only screen and (max-width: 1600px) {
+    .container-fluid-form1>div>img {
+        object-fit: cover;
+        max-width: 80vh;
     }
 }
-@media only screen and (max-width: 1500px){
-    .container-fluid-form1 > div > img{
-    object-fit: cover;
-    max-width: 70vh;
+
+@media only screen and (max-width: 1500px) {
+    .container-fluid-form1>div>img {
+        object-fit: cover;
+        max-width: 70vh;
     }
 }
-@media only screen and (max-width: 1300px){
-    .container-fluid-form1 > div > img{
-    object-fit: cover;
-    max-width: 50vh;
+
+@media only screen and (max-width: 1300px) {
+    .container-fluid-form1>div>img {
+        object-fit: cover;
+        max-width: 50vh;
     }
-    .article-text{
+
+    .article-text {
         font-size: 2rem;
     }
 }
-@media only screen and (max-width: 1000px){
-    .navbar{
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
         padding: 0 0 0rem;
     }
+    .pricingTable {
+        margin-bottom: 25px;
+    }
+    .info_image_health > img{
+        margin-top: 15%;
+    }
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-    font-family: "Bitter";
-    font-size: 2rem;
+        font-family: "Bitter";
+        font-size: 2rem;
     }
-    .container-fluid-form1 > div > img{
-    object-fit: cover;
-    max-width: 60vh;
-    margin-bottom: 20px;
+
+    .container-fluid-form1>div>img {
+        object-fit: cover;
+        max-width: 60vh;
+        margin-bottom: 20px;
     }
-    .article-text{
+
+    .article-text {
         font-size: 1.5rem;
     }
-    .temp{
+
+    .temp {
         display: none;
     }
-    .about_image{
+
+    .about_image {
         margin-top: 50px;
     }
-    .navbar_logo{
+
+    .navbar_logo {
         width: 70px;
         height: 70px;
     }
-}
-@media only screen and (max-width: 576px){
-    .container-fluid-form1 > div > img{
-    object-fit: cover;
-    max-width: 40vh;
+    .info_image_health > img{
+        width: 80%;
+        margin-top: 15%;
     }
-    .footer-heading{
+}
+
+@media only screen and (max-width: 576px) {
+    .container-fluid-form1>div>img {
+        object-fit: cover;
+        max-width: 40vh;
+    }
+
+    .footer-heading {
         font-size: 1rem;
     }
-    .footer_icons{
+
+    .footer_icons {
         display: none;
     }
-    .footer_sub_heading{
+
+    .footer_sub_heading {
         font-size: 0.8rem;
     }
-    .navbar_logo{
+
+    .navbar_logo {
         width: 60px;
         height: 60px;
     }
 }
-@media only screen and (max-width: 500px){
-    .container-fluid-form1 > div > img{
-    object-fit: cover;
-    max-width: 40vh;
-    }
-    .info_image > img{
+
+@media only screen and (max-width: 500px) {
+    .container-fluid-form1>div>img {
+        object-fit: cover;
         max-width: 40vh;
     }
-    .article-text{
+
+    .info_image>img {
+        max-width: 40vh;
+    }
+
+    .article-text {
         font-size: 1rem;
     }
-    .footer-heading{
+
+    .footer-heading {
         display: none;
     }
-    .footer_sub_heading{
+
+    .footer_sub_heading {
         font-size: 0.5rem;
     }
 }
