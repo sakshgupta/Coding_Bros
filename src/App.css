@@ -109,6 +109,12 @@ p {
     font-weight: 400;
 }
 
+.navbar_logo{
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
+}
+
 /* Buttons */
 
 .download-button {
@@ -382,6 +388,10 @@ p {
     .about_image{
         margin-top: 50px;
     }
+    .navbar_logo{
+        width: 70px;
+        height: 70px;
+    }
 }
 @media only screen and (max-width: 576px){
     .container-fluid-form1 > div > img{
@@ -396,6 +406,10 @@ p {
     }
     .footer_sub_heading{
         font-size: 0.8rem;
+    }
+    .navbar_logo{
+        width: 60px;
+        height: 60px;
     }
 }
 @media only screen and (max-width: 500px){

@@ -1,8 +1,11 @@
 import React from 'react'
+import HealthForm from '../components/health_form'
 
 function healthcare() {
     return (
-        <div>healthcare</div>
+        <div>
+            <HealthForm />
+        </div>
     )
 }
 

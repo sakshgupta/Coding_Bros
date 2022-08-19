@@ -1,5 +1,10 @@
 import React from 'react';
-
+import AboutUs from '../sections/about'
+import Footer from '../sections/footer'
+import Article from '../sections/article'
+import Shop from '../sections/shop'
+import Form1 from '../components/shelter_form'
+import Form2 from '../components/info_form'
 
 function title() {
     return (
@@ -11,8 +16,8 @@ function title() {
                     {/* Nav Bar */}
 
                     <nav className="navbar navbar-expand-lg navbar-dark">
-
-                        <a className="navbar-brand" href="">PAW - Shelter</a>
+                        <img className="navbar_logo" src="./logo512.png" />
+                        <a className="navbar-brand" href="#title">PAW - Shelter</a>
 
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                             <span className="navbar-toggler-icon"></span>
@@ -60,7 +65,14 @@ function title() {
                 </div>
 
             </section>
+            <AboutUs />
+            <Form1 />
+            <Form2 />
+            <Article />
+            <Shop />
+            <Footer />
         </div>
+        
     )
 }
 
